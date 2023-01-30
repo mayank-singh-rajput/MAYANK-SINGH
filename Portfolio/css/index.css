@@ -1,0 +1,263 @@
+html {height: 100%;}
+  
+  body {
+    overflow: hidden;
+    background: #84d0e4 no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font: normal 14px/1.618em "Roboto", sans-serif;
+  }
+
+  #proceed {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 85%;
+    left: 85%;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 50px 20px;
+    box-shadow: 4px whitesmoke;
+    background-color: rgb(62, 150, 62);
+    animation: abc 5s 1;
+    animation-direction: alternate;
+  }
+
+  @keyframes abc {
+    from {top: 800px;}
+  to {top: 630px;}
+  }
+  
+  .profile-card {
+    background: #FFB300;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 70px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.16), 0px 6px 9px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.16), 0px 6px 9px rgba(0, 0, 0, 0.23);
+    -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  }
+  
+  .profile-card header {
+    background-color: #29defec9;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 50px;
+    opacity: 0;
+    text-align: center;
+    -webkit-animation: moveIn 1s 3.1s ease forwards;
+    animation: moveIn 1s 3.1s ease forwards;
+  }
+
+  h1, h2 {
+    font-weight: 500;
+    margin: 0px 0px 5px 0px;
+  }
+  
+  .profile-card header h1 {
+    color: #ff0015;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+
+  .profile-card header h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  .profile-card header a {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 40px 40px;
+  }
+  
+  .profile-card header a > img {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    max-width: 100%;
+    height: 320px;
+    max-height: 100%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: -webkit-box-shadow 0.4s ease;
+    transition: box-shadow 0.3s ease;
+    -webkit-box-shadow: 0px 0px 0px 8px rgba(255, 0, 0, 0.06);
+    box-shadow: 0px 0px 0px 8px rgba(255, 0, 0, 0.06);
+  }
+  
+  .profile-card header a:hover > img {
+    -webkit-box-shadow: 0px 0px 0px 15px rgba(255, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px 15px rgba(255, 0, 0, 0.2);
+  }
+
+  @-webkit-keyframes init {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50%{
+        width: 28px;
+        height: 28px;
+    }
+    100% {
+      width: 56px;
+      height: 56px;
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes init {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50%{
+        width: 28px;
+        height: 28px;
+    }
+    100% {
+      width: 56px;
+      height: 56px;
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes moveDown {
+    0% {
+      background: goldenrod;
+      top: 50%;
+    }
+    50% {
+      background: yellow;
+      top: 30%;
+    }
+    100% {
+      background: white;
+      top: 100%;
+    }
+  }
+  @keyframes moveDown {
+    0% {
+      background: goldenrod;
+      top: 50%;
+    }
+    50% {
+      background: yellow;
+      top: 30%;
+    }
+    100% {
+      background: white;
+      top: 100%;
+    }
+  }
+  
+  @-webkit-keyframes moveUp {
+    0% {
+      background: yellow;
+      top: 100%;
+    }
+    50% {
+      background: greenyellow;
+      top: 30%;
+    }
+    100% {
+      background: white;
+      top: 50%;
+    }
+  }
+  @keyframes moveUp {
+    0% {
+      background: yellow;
+      top: 100%;
+    }
+    50% {
+        background: greenyellow;
+      top: 30%;
+    }
+    100% {
+      top: 50%;
+      background: white;
+    }
+  }
+  
+  @-webkit-keyframes moveIn {
+    0% {
+      margin-top: 50px;
+      opacity: 0;
+    }
+    100% {
+      margin-top: -20px;
+      opacity: 1;
+    }
+  }
+  @keyframes moveIn {
+    0% {
+      margin-top: 50px;
+      opacity: 0;
+    }
+    100% {
+      margin-top: -20px;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-height: 400px) {
+    .profile-card header {
+      width: auto;
+      height: auto;
+      padding: 30px 20px;
+      display: block;
+      float: none;
+      border-right: none;
+    }
+    @-webkit-keyframes materia {
+      0% {
+        background: #E0E0E0;
+      }
+      50% {-webkit-border-radius: 4px;}
+      100% {
+        width: 280px;
+        height: 500px;
+        background: #FFFFFF;
+        /* -webkit-border-radius: 4px; */
+        box-shadow: 5px 5px 10px 10px whitesmoke;
+        border-radius: 10px;
+      }
+    }
+    @keyframes materia {
+      0% {
+        background: #E0E0E0;
+      }
+      50% {border-radius: 4px;}
+      100% {
+        width: 280px;
+        height: 500px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 10px whitesmoke;
+      }
+    }
+   }
